@@ -1,6 +1,8 @@
 ﻿using Prism.Ioc;
 using ZZA.Dashboard.Views;
 using System.Windows;
+using ZZA.Dashboard.Repositories;
+using ZZA.Dashboard.Data;
 
 namespace ZZA.Dashboard
 {
@@ -16,7 +18,7 @@ namespace ZZA.Dashboard
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.Register<ApplicationContext>();
         }
     }
 }
